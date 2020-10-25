@@ -112,10 +112,19 @@ if(color === "blue") {
 const username = "rick123"
 const password = "aL8#klf0"
 
-if(username === username && password === password) {
-    console.log(`Access allowed!`)
+// if(username === username && password === password) {
+//     console.log(`Access allowed!`)
+// } else {
+//     console.log(`Access denied!`)
+// }
+
+// return different messages if some of them are incorrect
+if(username !== 'rick123') {
+    console.log(`Username is incorrect`)
+} else if (password !== 'aL8#klf0') {
+    console.log(`Your password is incorrect`)
 } else {
-    console.log(`Access denied!`)
+    console.log(`Everything is correct`)
 }
 
 // end
