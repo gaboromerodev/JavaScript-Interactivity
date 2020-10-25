@@ -13,12 +13,18 @@ changeBkg.style.color = '#000';
 // change the style and the title on click
 const headerBtn = document.getElementById('headerBtn');
 const myTitle = document.getElementById('myTitle');
+let counter = 0;
 
 headerBtn.addEventListener('click', function(e){
     this.style.background = 'black';
     this.style.color = "white";
     myTitle.textContent = 'I am learning JavaScript';
+   
+
+    //make the button text equal the counter variable
+    headerBtn.textContent = counter;
     console.log('it was clicked');
+
 })
 
 
