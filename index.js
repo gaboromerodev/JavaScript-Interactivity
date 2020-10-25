@@ -50,3 +50,18 @@ const itFit = function() {
 }
 
 itFit()
+
+
+// access a function inside an objet
+
+const larry = {
+    name: "Larry",
+    age: 20,
+    friends: ["Gabriel", "Mónica", "Laura", "José"],
+    greeting: "Hi, I am Larry!",
+    sayGreeting: function() {
+        console.log(this.greeting)
+    }
+}
+
+larry.sayGreeting();
