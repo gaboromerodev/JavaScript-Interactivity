@@ -88,3 +88,34 @@ const myCar = {
 myCar.activateHonkSound();
 console.log(myCar.brand);
 console.log(myCar["model"]);
+
+//////////////////
+// Conditionals //
+//////////////////
+
+// How we ask our program a question about our data and then run a specific set of code depending on the answer.
+
+const color = "brown"
+
+if(color === "blue") {
+    console.log(`It's blue!`);
+} else if (color === "brown") {  // you can add as many 'else if' you need
+    console.log(`It's brown`);
+} else if (color === "black") {
+    console.log(`It's black!`)
+} else {
+    console.log(`Color is not blue or brown`)
+}
+
+// check if username and password are correct
+
+const username = "rick123"
+const password = "aL8#klf0"
+
+if(username === username && password === password) {
+    console.log(`Access allowed!`)
+} else {
+    console.log(`Access denied!`)
+}
+
+// end
