@@ -19,6 +19,7 @@ headerBtn.addEventListener('click', function(e){
     this.style.background = 'black';
     this.style.color = "white";
     myTitle.textContent = 'I am learning JavaScript';
+    counter += 1;
    
 
     //make the button text equal the counter variable
