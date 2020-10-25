@@ -45,10 +45,10 @@ const combinedHeight = box1 + box2;
 
 
 const itFit = function() {
-   if(truckHeight > combinedHeight) {
-    console.log(`It doesn't fit`);
-   } else {
+   if(combinedHeight <= truckHeight) {
     console.log(`It fit`);
+   } else {
+    console.log(`It does NOT fit`);
    }
 } 
 
