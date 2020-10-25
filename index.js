@@ -128,3 +128,37 @@ if(username !== 'rick123') {
 }
 
 // end
+
+/////////////////////
+// Logic Operators //
+/////////////////////
+
+// Another category in the operator family
+
+// 3 main logic operators
+
+const username2 = "joe"
+const password2 = "joe123"
+
+// And
+// &&
+// if(username === "jo" && password === "joe123"){
+//     console.log("Access granted")
+// } else {
+//     console.log("Username or password are incorrect")
+// }
+
+// Or
+// ||
+if(!username2 || !password2){
+    console.log("Please provide username and password")
+} else if (username2 === "joe" && password2 === "joe123"){
+    console.log("Access granted")
+} else {
+    console.log("Access denied. Check username and password")
+}
+
+
+// Negation
+// !
+
