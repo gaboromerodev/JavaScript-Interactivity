@@ -29,3 +29,27 @@ headerBtn.addEventListener('click', function(e){
 })
 
 
+// Find if the two boxe's combined height will fit in the back of the truck. (3.5mts tall capacity)
+// First declare 2 variables, 'box1' and 'box2; and assign them each the height values shown in the slide.
+// Second, create a variable named 'combinedHeight' that stores the value of box1 added to box2
+// Third, create a variable named 'truckHeight' that stores the truck height capacity from the slide.
+// Lastly, console.log the value of the combinedHeight subtracted from the truckHeight, if it is a positive number, they will fit!
+
+const box1 = 1.342;
+const box2 = 2.038;
+const truckHeight = 3.5;
+
+const combinedHeight = box1 + box2;
+
+// console.log(truckHeight - combinedHeight);
+
+
+const itFit = function() {
+   if(truckHeight > combinedHeight) {
+    console.log(`It doesn't fit`);
+   } else {
+    console.log(`It fit`);
+   }
+} 
+
+console.log(itFit());
