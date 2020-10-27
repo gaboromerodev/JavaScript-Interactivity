@@ -196,21 +196,20 @@
 // console.log(tableNumbers)
 
 
-// //Mini Challenge: We have decided to play a game between all of us. 
-// //Create a loop that loops over the numbers given to each one of us. 
-// // If the person has even number is even, print out the word 'blue team'. If it is odd, print out the word 'red team'.
+//Mini Challenge: We have decided to play a game between all of us. 
+//Create a loop that loops over the numbers given to each one of us. 
+// If the person has even number is even, print out the word 'blue team'. If it is odd, print out the word 'red team'.
 
-// const teams = [1, 2, 3, 4, 5, 6, 7, 8];
+const teams = [1, 2, 3, 4, 5, 6, 7, 8];
 
-// for ( let i3 = 0; i3 < teams.length; i3++ ) {
-//     if(teams[i3] % 2 === 0) {
-//         console.log(`${teams[i3]} you are in the blue team`)
-//     } else {
-//         console.log(`${teams[i3]} you are in the red team`)
-//     }
-// }
+for ( let i3 = 0; i3 < teams.length; i3++ ) {
+    if(teams[i3] % 2 === 0) {
+        console.log(`${teams[i3]} you are in the blue team`)
+    } else {
+        console.log(`${teams[i3]} you are in the red team`)
+    }
+}
 
-// end
 
 //Challenge: We use what we have learnt in the previous three lessons in order 
 //to visually colour a game board in our browser. At the moment the board is empty. 
@@ -219,13 +218,56 @@
 
 const squares = Array.from(document.querySelectorAll('.grid div'))
 
-for(let i4 = 0; i4 < squares.length; i4++) {
-    if ( i4 % 2 === 0) {
-        squares[i4].classList.add('even');
+for (let i = 0; i < squares.length; i++) {
+    if ( i % 2 === 0) {
+        squares[i].classList.add('even');
     } else {
-      squares[i4].classList.add('odd');
+      squares[i].classList.add('odd');
     }
 }
+
+//loops and arrays part 2
+
+//Challenge: you are working at a very fancy new nightclub and in charge of letting people in based on their age. If they are not 21 years of age, you cannot let them in. Please send them a nice personalised message letting them know.
+
+//Dont forget to share your code on the #share-your-code channel on discord.
+
+const nightClubRegister = [
+    {
+        name: 'Ahmed',
+        lastname: 'Abdool',
+        age: 25,
+        gender: 'male'
+    },
+    {
+        name: 'Sally',
+        lastname: 'Morgan',
+        age: 18,
+        gender: 'female'
+    },
+    {
+        name: 'Dionne',
+        lastname: 'Brown',
+        age: 29,
+        gender: 'female'
+    },
+    {
+        name: 'Max',
+        lastname: 'Forrester',
+        age: 20,
+        gender: 'male'
+    }
+]
+
+for ( let i = 0; i < nightClubRegister.length; i++) {
+    if (nightClubRegister[i].age < 21 ) {
+        console.log(`Sorry ${nightClubRegister[i].name} you are not old enough to be allowed to enter the club.`)
+    } else {
+        console.log(`Welcome ${nightClubRegister[i].name} to the club.`)
+    }
+}
+
+// end
 
 
 
