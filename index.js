@@ -228,7 +228,8 @@ for (let i = 0; i < squares.length; i++) {
 
 //loops and arrays part 2
 
-//Challenge: you are working at a very fancy new nightclub and in charge of letting people in based on their age. If they are not 21 years of age, you cannot let them in. Please send them a nice personalised message letting them know.
+//Challenge: you are working at a very fancy new nightclub and in charge of letting people in based on their age. 
+//If they are not 21 years of age, you cannot let them in. Please send them a nice personalised message letting them know.
 
 //Dont forget to share your code on the #share-your-code channel on discord.
 
