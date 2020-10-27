@@ -270,6 +270,17 @@ for ( let i = 0; i < nightClubRegister.length; i++) {
 
 // end
 
+// Nested loops
+
+const buildings = 4;
+
+for (let i = 0; i < buildings ; i++) {
+    console.log('buildings' + (i + 1))
+    for (let j = 0; j < 3; j++) {
+        console.log('flat' + (j + 1))
+    }
+}
+
 
 
 
