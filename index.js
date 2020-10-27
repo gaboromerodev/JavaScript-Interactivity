@@ -178,3 +178,38 @@ const europe = ['Czech Republic', 'Greece', 'Germany', 'Scotlan', 'Sweeden', 'It
 for ( let two = 0; two < europe.length; two++) {
     console.log(europe[two]);
 }
+
+//For Loops with if statements
+
+//We are trying to find a table for my speed dating group to sit at, that is the most economical for the restaurant. How many options do I have?
+
+const tableNumbers = [5, 14, 7, 10, 20, 11, 12, 15, 3]
+
+for(let i2 = 0; i2 < tableNumbers.length; i2++) {
+    if(tableNumbers[i2] % 2 === 0 ) {
+        console.log(`Please, sit at table number ${tableNumbers[i2]}`);
+    } else {
+        console.log(`Sorry, at table number ${tableNumbers[i2]}, we will have an empty chair and is not convenient for the restaurant`);
+    }
+}
+
+console.log(tableNumbers)
+
+
+//Mini Challenge: We have decided to play a game between all of us. 
+//Create a loop that loops over the numbers given to each one of us. 
+// If the person has even number is even, print out the word 'blue team'. If it is odd, print out the word 'red team'.
+
+const teams = [1, 2, 3, 4, 5, 6, 7, 8];
+
+for ( let i3 = 0; i3 < teams.length; i3++ ) {
+    if(teams[i3] % 2 === 0) {
+        console.log(`${teams[i3]} you are in the blue team`)
+    } else {
+        console.log(`${teams[i3]} you are in the red team`)
+    }
+}
+
+// end
+
+
