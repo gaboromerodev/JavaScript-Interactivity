@@ -7,22 +7,22 @@ all other text - 21px
 colors: 
    #588C94 
    #1D3C41
-*/ */
+*/ 
 
 /* Global styles  */
 
-body {
+/* body {
     margin: 0;
     /* this font size will effect all elements (other than h1 -> h6) on the page */
-    font-size: 21px;
+    /* font-size: 21px;
     box-sizing: border-box;
-}
+} */ 
 
 /* ========
 Typography 
 ======== */
 
-h1 {
+/* h1 {
     font-size: 28px;
 }
 
@@ -32,13 +32,13 @@ h2 {
 
 h3 {
     font-size: 14px;
-}
+} */
 
 /* ========
 Layout 
 ======== */
 
-header {
+/* header {
     background-color: #588C94;
     color: white;
     padding: 30px 0;
@@ -66,4 +66,34 @@ header {
 
 .column {
     margin: 0 10px;
+} */
+
+body {
+    background-color: #FFABAB;
+    display: flex;
+    justify-content: center;
+}
+
+.grid {
+    margin-top: 50px;
+    width: 288px;
+    height: 288px;
+    border: solid white 8px;
+    border-radius: 3px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.grid div {
+    width: 30px;
+    height: 30px;
+    border: solid white 0.5px;
+}
+
+.even {
+    background-color: red;
+}
+
+.odd {
+    background-color: black;
 }
