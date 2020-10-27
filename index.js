@@ -162,3 +162,19 @@ if(!username2 || !password2){
 // Negation
 // !
 
+/////////////////////////
+/// FOR LOOPS ///////////
+////////////////////////
+
+// Count to 100 mississippi
+for(let i = 0; i <= 100; i++) {
+    console.log(`${i} mississippi`);
+}
+
+// for loops with arrays
+
+const europe = ['Czech Republic', 'Greece', 'Germany', 'Scotlan', 'Sweeden', 'Italy', 'Spain', 'Portugal'];
+
+for ( let two = 0; two < europe.length; two++) {
+    console.log(europe[two]);
+}
